@@ -21,7 +21,6 @@ export default function Experience() {
       <div className="px-6 mx-auto py-2 bg-yellow-100/75 border-l-4 border-yellow-500/75 text-yellow-700 dark:bg-yellow-200/75 dark:border-yellow-600/75 dark:text-yellow-900 text-center text-lg font-semibold mt-8 mb-12 max-w-screen-lg">
         Please note that the timelines provided are based on our extensive experience and are fairly accurate. However, they are rough estimates and the actual time required may vary depending on the complexity of the project. Simpler solutions could even be completed within a week.
       </div>
-
       <VerticalTimeline lineColor="">
         {experiencesData.map((item, index) => (
           <React.Fragment key={index}>
@@ -44,7 +43,7 @@ export default function Experience() {
               icon={item.icon}
               iconStyle={{
                 background:
-                  theme === "light" ? "white" : "rgba(255, 255, 255, 0.15)",
+                  theme === "light" ? "#fcfdfe" : "rgba(255, 255, 255, 0.95)",
                 fontSize: "1.5rem",
               }}
             >

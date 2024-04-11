@@ -12,12 +12,16 @@ import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "@/context/theme-context";
 
 export default function Experience() {
-  const { ref } = useSectionInView("Experience");
+  const { ref } = useSectionInView("Process");
   const { theme } = useTheme();
 
   return (
-    <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
-      <SectionHeading>My experience</SectionHeading>
+    <section id="process" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
+      <SectionHeading>Our Process</SectionHeading>
+      <div className="px-6 mx-auto py-2 bg-yellow-100/75 border-l-4 border-yellow-500/75 text-yellow-700 dark:bg-yellow-200/75 dark:border-yellow-600/75 dark:text-yellow-900 text-center text-lg font-semibold mt-8 mb-12 max-w-screen-lg">
+        Please note that the timelines provided are based on our extensive experience and are fairly accurate. However, they are rough estimates and the actual time required may vary depending on the complexity of the project. Simpler solutions could even be completed within a week.
+      </div>
+
       <VerticalTimeline lineColor="">
         {experiencesData.map((item, index) => (
           <React.Fragment key={index}>

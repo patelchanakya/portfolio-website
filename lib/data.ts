@@ -62,7 +62,7 @@ export const projectsData = [
     title: "Sunshine Dry Cleaners & More",
     description:
       "Total web design and development for Fort McMurray's premier dry cleaners.",
-    tags: ["Graphic Design", "Web Development", "Search Engine Optimization"],
+    tags: ["Graphic Design", "Web Development", "Copywriting"],
     imageUrl: corpcommentImg,
   }
   // {
@@ -86,4 +86,5 @@ export const skillsData = [
   "Web Development",
   "Search Engine Optimization",
   "Social Media Marketing",
+  "Copywriting",
 ] as const;

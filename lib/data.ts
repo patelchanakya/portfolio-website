@@ -36,7 +36,7 @@ export const experiencesData = [
     title: "Ideation",
     location: "Conceptualizing Success",
     description: "In the Ideation phase, we define the project's scope and goals. Our focus is on creating a strategic plan that aligns with your objectives, ensuring a solid foundation for success. Additionally, we will provide preliminary web designs before finalizing to ensure the project's direction meets your vision.",
-    icon: React.createElement(CgBulb),
+    icon: React.createElement(CgBulb, { color: "black" }),
     date: "1-2 Weeks",
   },
   {
@@ -44,7 +44,7 @@ export const experiencesData = [
     location: "Building Your Vision",
     description:
       "During the Development phase, our team transforms your conceptualized ideas into tangible solutions. This stage involves rigorous coding, testing, and iterations to ensure the final product aligns with your vision and objectives.",
-    icon: React.createElement(CgCodeSlash),
+    icon: React.createElement(CgCodeSlash, { color: "black" }),
     date: "4-12 Weeks",
   },
   {
@@ -52,7 +52,7 @@ export const experiencesData = [
     location: "Refining for Excellence",
     description:
       "During the Optimization phase, we're dedicated to refining and elevating your project with thorough reviews and ongoing enhancements. We recognize that new ideas may emerge, and we're fully prepared to accommodate any changes or additional features you envision.",
-    icon: React.createElement(CgSearch),
+    icon: React.createElement(CgSearch, { color: "black" }),
     date: "Up to 1 Year of Service",
   },
 ] as const;

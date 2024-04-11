@@ -21,15 +21,15 @@ const fadeInAnimationVariants = {
 };
 
 export default function Skills() {
-  const { ref } = useSectionInView("Skills");
+  const { ref } = useSectionInView("Solutions");
 
   return (
     <section
-      id="skills"
+      id="solutions"
       ref={ref}
-      className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
+      className="mb-24 max-w-[53rem] scroll-mt-28 text-center sm:mb-28"
     >
-      <SectionHeading>My skills</SectionHeading>
+      <SectionHeading>What We Do</SectionHeading>
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
         {skillsData.map((skill, index) => (
           <motion.li

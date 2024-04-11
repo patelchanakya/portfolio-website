@@ -1,7 +1,5 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
+import { CgBulb, CgCodeSlash, CgSearch, CgWorkAlt } from "react-icons/cg";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
@@ -16,92 +14,76 @@ export const links = [
     hash: "#about",
   },
   {
-    name: "Projects",
-    hash: "#projects",
+    name: "Work",
+    hash: "#work",
   },
   {
-    name: "Skills",
-    hash: "#skills",
+    name: "Solutions",
+    hash: "#solutions",
   },
   {
-    name: "Experience",
-    hash: "#experience",
+    name: "Process",
+    hash: "#process",
   },
   {
-    name: "Contact",
-    hash: "#contact",
+    name: "Connect",
+    hash: "#connect",
   },
 ] as const;
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
-    description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    title: "Ideation",
+    location: "Conceptualizing Success",
+    description: "In the Ideation phase, we define the project's scope and goals. Our focus is on creating a strategic plan that aligns with your objectives, ensuring a solid foundation for success. Additionally, we will provide preliminary web designs before finalizing to ensure the project's direction meets your vision.",
+    icon: React.createElement(CgBulb),
+    date: "1-2 Weeks",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Development",
+    location: "Building Your Vision",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+      "During the Development phase, our team transforms your conceptualized ideas into tangible solutions. This stage involves rigorous coding, testing, and iterations to ensure the final product aligns with your vision and objectives.",
+    icon: React.createElement(CgCodeSlash),
+    date: "4-12 Weeks",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Optimization",
+    location: "Refining for Excellence",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "During the Optimization phase, we're dedicated to refining and elevating your project with thorough reviews and ongoing enhancements. We recognize that new ideas may emerge, and we're fully prepared to accommodate any changes or additional features you envision.",
+    icon: React.createElement(CgSearch),
+    date: "Up to 1 Year of Service",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Sunshine Dry Cleaners & More",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      "Total web design and development for Fort McMurray's premier dry cleaners.",
+    tags: ["Graphic Design", "Web Development", "Search Engine Optimization"],
     imageUrl: corpcommentImg,
-  },
-  {
-    title: "rmtDev",
-    description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
-  },
-  {
-    title: "Word Analytics",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
-  },
+  }
+  // {
+  //   title: "rmtDev",
+  //   description:
+  //     "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+  //   tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+  //   imageUrl: rmtdevImg,
+  // },
+  // {
+  //   title: "Word Analytics",
+  //   description:
+  //     "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+  //   tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+  //   imageUrl: wordanalyticsImg,
+  // },
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
-  "Framer Motion",
+  "Graphic Design",
+  "Web Development",
+  "Search Engine Optimization",
+  "Social Media Marketing",
 ] as const;

@@ -9,11 +9,11 @@ import SubmitBtn from "./submit-btn";
 import toast from "react-hot-toast";
 
 export default function Contact() {
-  const { ref } = useSectionInView("Contact");
+  const { ref } = useSectionInView("Connect");
 
   return (
     <motion.section
-      id="contact"
+      id="connect"
       ref={ref}
       className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center"
       initial={{
@@ -29,16 +29,20 @@ export default function Contact() {
         once: true,
       }}
     >
-      <SectionHeading>Contact me</SectionHeading>
+      <SectionHeading>Let’s make something great</SectionHeading>
 
-      <p className="text-gray-700 -mt-6 dark:text-white/80">
-        Please contact me directly at{" "}
-        <a className="underline" href="mailto:example@gmail.com">
-          example@gmail.com
-        </a>{" "}
-        or through this form.
-      </p>
-
+      <div className="text-gray-700 -mt-6 dark:text-white/80">
+        <p>
+          We’re always excited to hear about new projects! If you have something in mind, feel free to reach out directly at{" "}
+          <a className="underline" href="tel:+17806074998">
+            780.607.4998
+          </a> {" "}
+          or you can also email us at{" "} <a className="underline" href="mailto:trudesignscanada@gmail.com">
+            trudesignscanada@gmail.com
+          </a>.{" "}
+          Alternatively, you can contact us through this form.
+        </p>
+      </div>
       <form
         className="mt-10 flex flex-col dark:text-black"
         action={async (formData) => {
